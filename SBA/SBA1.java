@@ -79,9 +79,12 @@ public class SBA1 extends Engineer{
 		System.out.println("Enter salary: ");
 		float y = s.nextFloat();
 		
+		int z = (int)(y);
+		
 		e.addDetails();
 		e.add(x);
 		e.salary(y);
+		e.salary(z);
 		e.display();
 		
 	}

@@ -1,7 +1,7 @@
 package com.ust;
 
 public class Final1 extends Super1{
-	final int x=5;
+	final int X=5;
 	int y;
 	
 	public static void main(String[] args) {
@@ -18,7 +18,7 @@ public class Final1 extends Super1{
 
 class Super1
 {
-	final int z=10;
+	final int Z=10;
 	final void display()
 	{
 		System.out.println("in display");

@@ -2,10 +2,10 @@ package com.ust;
 
 public class Final_Demo {
 	
-	final int daysInWeek;
+	final int DAYS_IN_WEEK;
 	Final_Demo()
 	{
-		daysInWeek = 7;
+		DAYS_IN_WEEK = 7;
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

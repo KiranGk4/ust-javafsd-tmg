@@ -1,0 +1,43 @@
+Java 8 Features
+
+•	Interfaces can have method definition by making the method as default or static.
+•	If the interface contains only static methods, then it is not necessary to implement the interface to the class.
+
+Functional Interface
+•	Functional interface is the interface with exactly one abstract method.
+  E.g.:	@FunctionalInterface
+  	interface SampleFunctionalInterface
+ 	  {
+ 		  void sampleMethod();
+ 	  } 
+•	Lambda expressions is used to represent the functional interface.
+
+Lambda Expression
+•	Lambda expression means list of arguments/parameters followed by arrow operator and the body.
+E.g.: 	(parameter/argument list) -> { body }
+•	Parameters can be null/ empty.
+•	It is introduced to favour the functional interface and method reference.
+•	Lambda expression can be passed to methods as parameters.
+
+Method Reference
+•	It is used to refer the method of functional interface.
+•	Types of method reference are
+  1. Reference to a static method.
+  2. Reference to an instance method.
+  3. Reference to a constructor.
+•	‘::’ is used to denote the method reference.
+•	E.g.: 	SampleInterface referenceVar = ClassObject::methodName;
+
+forEach
+•	It’s like for loop, used to iterate.
+•	It is designed to iterate collection elements and lies under Iterable interface.
+
+Optional Class
+•	It is introduced to deal with NullPointerException.
+•	Optional class is used to know whether the variable has null value or not.
+
+Stream
+It is used to get stream of data from collection, arrays, I/O operations. It doesn’t store elements but used to get stream of data. Operation performed on data doesn’t change the data in the source, it returns new stream.
+
+Collectors class
+It is used with stream API. filter(), map(), collect() and reduce() are mainly used functions. Collectors usually used inside collect().

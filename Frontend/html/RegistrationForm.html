@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration Form</title>
+<link rel="stylesheet" type="text/css" href="C:\Users\ustjavafsdb208\eclipse-workspace\Frontend\src\main\webapp\WEB-INF\css\RegistrationForm.css">
+</head>
+<body>
+	<div>
+	
+		<form action="#">
+			<span><h1>Registration</h1></span>
+			<div class="lcolumn">
+				<div class="col-height">
+					<label>Full Name</label><br>
+					<input type="text" placeholder="Please Enter your name" name="fname">
+				</div>
+				<div class="col-height">
+					<label>Email</label><br>
+					<input type="email" placeholder="Email" name="email">
+				</div>
+				<div class="col-height">
+					<label>Country</label><br>
+					<input type="text" placeholder="Please enter your" name="country">
+				</div>
+				<div class="col-height">
+					<label>Password</label><br>
+					<input type="password" placeholder="Please enter your" name="pwd">
+				</div>
+			</div>
+			<div class="rcolumn">
+				<div class="col-height">
+					<label>Position you are applying for</label><br>
+					<select >
+						<option>Please Select</option>
+						<option>SDE</option>
+						<option>Tester</option>
+					</select>
+				</div>
+				<div class="col-height">
+					<label>Phone Number</label><br>
+					<input type="tel" placeholder="Phone Number" name="ph">
+				</div>
+				<div class="col-height">
+					<label>City</label><br>
+					<input type="text" placeholder="Please enter your" name="city">
+				</div>
+				<div class="col-height">
+					<label>Confirm Password</label><br>
+					<input type="password" placeholder="Please enter your" name="cpwd">
+				</div>
+			</div>
+			<div class="gend">
+				<label>Gender</label><br>
+				<input type="radio" name="g" id="m"><label>Male</label>
+				<input type="radio" name="g" id="f"><label>Female</label>
+				<input type="radio" name="g" id="o"><label>Other</label>
+				<input type="radio" name="g" id="p"><label>Prefer not to say</label>
+			</div>
+			
+			<button type="submit" class="gend" value="next Step">Next Step</button>
+			
+		</form>
+	</div>
+</body>
+</html>

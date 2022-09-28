@@ -6,16 +6,26 @@ label{
 	font-weight: bold;
 }
 
+.container{
+	display: flex;
+}
+
 .rcolumn{
-	margin-top:-201px;
+	margin-top:-195px;
 	margin-left: 50%;
 }
 
 .lcolumn, h1, .gend{
 	margin-top: 2%;
-	margin-left: 34%;
+	margin-left: 30%;
 }
 
+progress{
+	color: blue;
+	margin-left: 30%;
+	width: 6%;
+	margin-top: 1px;
+}
 button{
 	width: 30%;
 	background-color: blue;
@@ -32,10 +42,12 @@ label{
 select{
 	width: 176px;
 	height: 26px;
+	border-radius: 6px;
 }
 
-input{
-	width: 30px;
+input:not(#g){
+	border-radius: 6px;
+	border-width: 1px;
 }
 input[type="text"]{
 	height: 20px;

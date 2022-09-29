@@ -6,10 +6,6 @@ label{
 	font-weight: bold;
 }
 
-.rcolumn{
-	margin-top:-195px;
-	margin-left: 50%;
-}
 
 body{
 	text-align: center;
@@ -38,19 +34,7 @@ input:not(#g){
 input[type="text"]{
 	height: 20px;
 }
-input[type="password"]{
-	height: 20px;
-}
-input[type="email"]{
-	height: 20px;
-}
-input[type="tel"]{
-	height: 20px;
-}
+
 input[type="radio"]{
 	padding-right: 3px; 
-}
-
-.col-height{
-	padding: 3px;
 }

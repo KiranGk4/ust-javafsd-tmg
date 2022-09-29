@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Radio Alert</title>
+	<script type="text/javascript">
+		function gendcount()
+		{
+			var a = document.getElementsByName("gender");
+			alert("Total Gender: "+a.length);
+		}
+	</script>
+</head>
+<body>
+	Male <input type="radio" name="gender" value="male">
+	Female <input type="radio" name="gender" value="female">
+	<button type="button" onclick="gendcount()">Submit</button>
+</body>
+</html>

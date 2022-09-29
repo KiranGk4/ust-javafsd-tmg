@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Switch Example</title>
+<script type="text/javascript">
+
+	function day()
+	{
+		var val = parseInt(document.getElementById("num").value);
+		switch(val)
+		{
+			case 1: document.write("Sunday");
+					break;
+			case 2: document.write("Monday");
+					break;
+			case 3: document.write("Tuesday");
+					break;
+			case 4: document.write("Wednesday");
+					break;
+			case 5: document.write("Thursday");
+					break;
+			case 6: document.write("Friday");
+					break;
+			case 7: document.write("Saturday");
+					break;
+			default: document.write("invalid number entered");
+					break;
+		}
+		
+	}
+	
+</script>
+</head>
+<body>
+	<h3>Week Day</h3>
+	<form action="">
+		<input type="text" id="num" placeholder="Enter the day number"><br>
+		<button type="button"  onclick="day()">Submit</button>
+	</form>
+
+</body>
+</html>

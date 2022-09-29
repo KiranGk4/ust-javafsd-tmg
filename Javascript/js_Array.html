@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Array Example</title>
+	
+	<script type="text/javascript">
+		var ar = new Array('Hey','Hi','Hello');
+		document.write("Array Elements: "+ar);
+		function arr()
+		{
+			var v = document.getElementById("val").value;
+			if(v<=ar.length && v>=0)
+				alert(ar[v]);
+			else
+				alert("Invalid input");
+		}
+		
+	</script>
+</head>
+<body>
+	<br><input type="text" placeholder="Enter the index to print" id="val"><br>
+	<input type="submit" value="submit" onclick="arr()">
+</body>
+</html>

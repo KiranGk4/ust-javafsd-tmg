@@ -16,13 +16,14 @@ class StudentMain
         /**
          Created ArrayList and add the students.
          */
-        List<Student> studentArrayList = new ArrayList<Student>();
-        String s = new String("Name");
+        List<Student> studentArrayList = new ArrayList<>();
+        String stringObject = "Name";
         for(int i=1; i<=4000; i++)
         {
-            s = s + String.valueOf(i);
-            studentArrayList.add(new Student(s,i,i));
-            s="Name";
+            //stringObject.concat(String.valueOf(i));
+            //stringObject = stringObject + i;
+            studentArrayList.add(new Student(stringObject.concat(String.valueOf(i)),i,i));
+            stringObject="Name";
         }
 
         /**
@@ -38,7 +39,8 @@ class StudentMain
         {
             System.out.println(ss.getName()+" "+ss.getAge()+" "+ss.getRollNo());
         }
-        System.out.println("Time taken to iterate through ArrayList = "+(System.currentTimeMillis()-startTime));
+        long arrayListTimeTaken = (System.currentTimeMillis()-startTime);
+        System.out.println("Time taken to iterate through ArrayList = "+arrayListTimeTaken);
 
 
         /**
@@ -46,12 +48,13 @@ class StudentMain
          */
         List<Student> studentLinkedList = new LinkedList<>();
 
-        s = "name";
+        stringObject = "Link";
         for(int i=1; i<=4000; i++)
         {
-            s = s + String.valueOf(i);
-            studentLinkedList.add(new Student(s,i,i));
-            s="name";
+            //stringObject.concat(String.valueOf(i));
+            //stringObject = stringObject + i;
+            studentLinkedList.add(new Student(stringObject.concat(String.valueOf(i)),i,i));
+            stringObject="Link";
         }
 
         /**
@@ -62,19 +65,21 @@ class StudentMain
         {
             System.out.println(ss.getName()+" "+ss.getAge()+" "+ss.getRollNo());
         }
-        System.out.println("Time taken to iterate through LinkedList = "+(System.currentTimeMillis()-startTime));
+        long linkedListTimeTaken = (System.currentTimeMillis()-startTime);
+        System.out.println("Time taken to iterate through LinkedList = "+linkedListTimeTaken);
 
 
         /**
          * Create HashSet and add students to HashSet.
          */
         Set<Student> studentHashSet = new HashSet<>();
-        s = "Nname";
+        stringObject = "Hash";
         for(int i=1; i<=4000; i++)
         {
-            s = s + String.valueOf(i);
-            studentHashSet.add(new Student(s,i,i));
-            s="Nname";
+            //stringObject.concat(String.valueOf(i));
+            //stringObject = stringObject + i;
+            studentHashSet.add(new Student(stringObject.concat(String.valueOf(i)),i,i));
+            stringObject="Hash";
         }
 
         /**
@@ -85,7 +90,15 @@ class StudentMain
         {
             System.out.println(ss.getName()+" "+ss.getAge()+" "+ss.getRollNo());
         }
-        System.out.println("Time taken to iterate through HashSet = "+(System.currentTimeMillis()-startTime));
-        System.out.println(studentHashSet.size());
+        long hashSetTimeTaken = (System.currentTimeMillis()-startTime);
+        System.out.println("Time taken to iterate through HashSet = "+hashSetTimeTaken);
+
+
+        /**
+         * Time taken for each ArrayList, LinkedList and HashSet
+         */
+        System.out.println("Time taken to iterate through ArrayList = "+arrayListTimeTaken);
+        System.out.println("Time taken to iterate through LinkedList = "+linkedListTimeTaken);
+        //System.out.println("Time taken to iterate through HashSet = "+hashSetTimeTaken);
     }
 }
